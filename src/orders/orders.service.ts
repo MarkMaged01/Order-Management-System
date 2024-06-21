@@ -4,6 +4,12 @@ import { Prisma } from '@prisma/client';
 
 @Injectable()
 export class OrderService {
+  applyCoupon(orderId: any, discount: any) {
+    throw new Error('Method not implemented.');
+  }
+  getUserOrders(userId: number) {
+    throw new Error('Method not implemented.');
+  }
   constructor(private prisma: PrismaService) {}
 
   async createOrder(userId: number) {
